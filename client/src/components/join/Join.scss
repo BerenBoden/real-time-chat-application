@@ -1,0 +1,52 @@
+@import '../../index.scss';
+
+.container-xl {
+    display: flex;
+    flex-direction: column;
+    text-align: center;
+    justify-content: center;
+    align-items: center;
+    height: 600px;
+    background: lavender;
+    border-radius: 5px;
+    .heading {
+        margin: 20px 0;
+        font-size: 2.8rem;
+        font-weight: 900;
+        text-transform: uppercase;
+        text-align: center;
+    }
+    input {
+        margin-top: 10px;
+        outline: 0;
+        border: 0;
+        width: 40vw;
+        padding: 5px 20px;
+        border-radius: 2px;
+        &:focus {
+            border: #777;
+        }
+    }
+    button {
+        border-radius: 3.5px;
+        margin-top: 10px;
+        width: 40vw;
+        padding: 15px 0;
+        outline: 0;
+        border: 0;
+        background: $background-blue;
+        color: #fff;
+        font-weight: 600;
+    }
+}
+
+@media only screen and(max-width: 768px){
+    .container-xl {
+        input {
+            width: 80vw;
+        }
+        button {
+            width: 80vw;
+        }
+    }
+}
